@@ -1,0 +1,10 @@
+GET localhost:8080/usuarios
+
+###
+
+POST localhost:8080/usuarios
+Content-Type: application/json
+
+{"id": 3, "usuario":"adminnovo","ativo": true}
+
+###
