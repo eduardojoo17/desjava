@@ -1,7 +1,10 @@
 package com.example.desenvolvimento.model;
 
+import jakarta.validation.constraints.NotNull;
+
 public class Usuario {
 private int id;
+@NotNull(message = "usuario é obrigatorio")
 private String usuario;
 private boolean ativo;
 

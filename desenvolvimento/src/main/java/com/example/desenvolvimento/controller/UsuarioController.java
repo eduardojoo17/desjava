@@ -18,10 +18,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity criarUsuario(@RequestBody Usuario usuario){
-        if(usuario.getUsuario()==null){
-            return ResponseEntity.badRequest().body("campo vazio");
-        }
+    public criarUsuario(Usuario usuario){
         usuarios.add(usuario);
         return ResponseEntity.ok(usuario);
     }
